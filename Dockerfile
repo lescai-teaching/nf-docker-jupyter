@@ -19,7 +19,7 @@ RUN conda install --quiet --yes \
     bioconda::samtools \
     bioconda::snpeff=4.5covid19 \
     bioconda::nextflow \
-    bioconda::nf-core \
+    bioconda::nf-core && \
     conda clean --all -f -y && \
     fix-permissions "${CONDA_DIR}" && \
     fix-permissions "/home/${NB_USER}"
